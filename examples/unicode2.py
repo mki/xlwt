@@ -6,7 +6,7 @@ from xlwt import *
 from xlwt.compat import PY3
 
 w = Workbook()
-ws1 = w.add_sheet(u'\N{GREEK SMALL LETTER ALPHA}\N{GREEK SMALL LETTER BETA}\N{GREEK SMALL LETTER GAMMA}\u2665\u041e\u041b\u042f\u2665')
+ws1 = w.add_sheet('\N{GREEK SMALL LETTER ALPHA}\N{GREEK SMALL LETTER BETA}\N{GREEK SMALL LETTER GAMMA}\u2665\u041e\u041b\u042f\u2665')
 
 fnt = Font()
 fnt.height = 26*20

@@ -71,7 +71,7 @@ def upack2(s, encoding='ascii'):
     return pack('<HB', n_items, flag) + encs
 
 def upack2rt(rt, encoding='ascii'):
-    us = u''
+    us = ''
     fr = ''
     offset = 0
     # convert rt strings to unicode if not already unicode

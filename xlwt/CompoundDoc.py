@@ -44,7 +44,7 @@ class XlsDoc:
     def _build_directory(self): # align on sector boundary
         self.dir_stream = b''
 
-        dentry_name      = u'Root Entry\x00'.encode('utf-16-le')
+        dentry_name      = 'Root Entry\x00'.encode('utf-16-le')
         dentry_name_sz   = len(dentry_name)
         dentry_name_pad  = b'\x00'*(64 - dentry_name_sz)
         dentry_type      = 0x05 # root storage
@@ -69,7 +69,7 @@ class XlsDoc:
            0
         )
 
-        dentry_name      = u'Workbook\x00'.encode('utf-16-le')
+        dentry_name      = 'Workbook\x00'.encode('utf-16-le')
         dentry_name_sz   = len(dentry_name)
         dentry_name_pad  = b'\x00'*(64 - dentry_name_sz)
         dentry_type      = 0x02 # user stream

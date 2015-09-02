@@ -72,7 +72,7 @@ class SharedStringTable(object):
         data.sort() # in index order
         for idx, s in data:
             if self._tally[idx] == 0:
-                s = u''
+                s = ''
             if isinstance(s, basestring):
                 self._add_to_sst(s)
             else:
